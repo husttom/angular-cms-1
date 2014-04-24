@@ -313,8 +313,8 @@ th {
 		box-shadow: 0 1px 10px rgba(black, 0.5);
 		@include pie-clearfix;
 		width: 80%;
-		min-height: 600px;
-		margin-top: 8%;
+		min-height: 550px;
+		margin-top: 5%;
 	}
 
 	.buttons {
@@ -322,12 +322,12 @@ th {
 	}
 
 	textarea {
-		min-height: 400px;
+		min-height: 350px;
 	}
 
 	.redactor_form-control {
-		min-height: 400px;
-		max-height: 400px;
+		min-height: 350px;
+		max-height: 350px;
 	}
 }
 

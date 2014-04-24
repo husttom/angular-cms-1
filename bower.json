@@ -10,6 +10,7 @@
     "animate.css": "~3.1.1",
     "ngDialog": "~0.1.7",
     "redactor": "https://github.com/saatur/redactor.git",
-    "angular-redactor": "https://github.com/TylerGarlick/angular-redactor.git#~1.0.0"
+    "angular-redactor": "https://github.com/TylerGarlick/angular-redactor.git#~1.0.0",
+    "ng-tags-input": "~2.0.1"
   }
 }

@@ -5,7 +5,6 @@
 		</div>
 	</div>
 
-
 	<div class="row">
 		<div class="col-md-9 col-sm-9 left-col">
 			<table class="table table-striped">
@@ -270,14 +269,10 @@
 					<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Title">
 				</div>
 				<div class="form-group">
-					<select name="authot" class="form-control" >
-						<option value="All">All</option>
-						<option value="Saatur">Saatur</option>
-						<option value="Artur">Artur</option>
-					</select>
+					<select ng-model="usersFilter" class="form-control" ng-options="user.name for user in users"></select>
 				</div>
 				<div class="form-group">
-					<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Categories">
+					<select ng-model="categorieFilter" class="form-control" ng-options="categorie.text for categorie in categories"></select>
 				</div>
 				<div class="form-group">
 					<input type="date" class="form-control" id="exampleInputEmail1" placeholder="Date">

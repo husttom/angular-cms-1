@@ -1,11 +1,11 @@
-<form role="form">
+<form role="form" ng-controller="EditController">
 	<div class="row">
 		<div class="col-md-8">
 			<h3>Edit news:</h3>
 			<div class="form-group">
 				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
 			</div>
-			<div class="form-group" style="height: 435px;">
+			<div class="form-group" style="height: 385px;">
 				<textarea class="form-control" ng-model="content" redactor>
 <img src="img/10.jpg" alt="Image 2" style="width: 284px; float: left; margin: 0px 10px 10px 0px; height: 284px;">
 <h3>Fahrenheit 451</h3>
@@ -20,13 +20,12 @@
 		<div class="col-md-4">
 			<h3>&nbsp;</h3>
 			<div class="form-group">
-				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Categories">
+				<tags-input ng-model="tags">
+					<auto-complete source="loadCategories()"></auto-complete>
+				</tags-input>
 			</div>
 			<div class="form-group">
-				<select name="authot" class="form-control" >
-					<option value="Saatur">Saatur</option>
-					<option value="Artur">Artur</option>
-				</select>
+				<select ng-model="userEdit" class="form-control" ng-options="user.name for user in users"></select>
 			</div>
 			<div class="form-group">
 				<input type="date" class="form-control" id="exampleInputEmail1" placeholder="Date" value="2014-04-24">
