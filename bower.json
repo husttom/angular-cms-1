@@ -1,0 +1,15 @@
+{
+  "name": "admin",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "~1.2.16",
+    "angular-ui-router": "~0.2.10",
+    "angular-animate": "~1.2.16",
+    "normalize.css": "~3.0.1",
+    "bootstrap": "~3.1.1",
+    "animate.css": "~3.1.1",
+    "ngDialog": "~0.1.7",
+    "redactor": "https://github.com/saatur/redactor.git",
+    "angular-redactor": "https://github.com/TylerGarlick/angular-redactor.git#~1.0.0"
+  }
+}

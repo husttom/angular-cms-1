@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" ng-app="app"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
+
+		<!-- build:css css/vendors.min.css -->
+			<!-- bower:css -->
+			<link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
+			<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+			<link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+			<link rel="stylesheet" href="bower_components/ngDialog/css/ngDialog.css" />
+			<link rel="stylesheet" href="bower_components/ngDialog/css/ngDialog-theme-default.css" />
+			<link rel="stylesheet" href="bower_components/redactor/css/redactor.css" />
+			<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- build:css(.tmp) css/main.min.css -->
+			<!-- begin:css -->
+<link rel="stylesheet" type="text/css" href=".tmp/base.css">
+<!-- end:css -->
+		<!-- endbuild -->
+	</head>
+	<body>
+
+		<div class="sidebar animated slideInLeft">
+			<div class="nav">
+				<ul>
+					<li ui-sref-active="active"><a ui-sref="home"><span class="glyphicon glyphicon-home"></span><br>Home</a></li>
+					<li ui-sref-active="active"><a ui-sref="news"><span class="glyphicon glyphicon-align-left"></span><br>News</a></li>
+					<li ui-sref-active="active"><a ui-sref="pages"><span class="glyphicon glyphicon-file"></span><br>Pages</a></li>
+					<li ui-sref-active="active"><a ui-sref="gallery" ><span class="glyphicon glyphicon-picture"></span><br>Gallery</a></li>
+					<li ui-sref-active="active"><a ui-sref="users"><span class="glyphicon glyphicon-user"></span><br>Users</a></li>
+					<li ui-sref-active="active"><a href="login.html"><span class="glyphicon glyphicon-off"></span><br>Logout</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content repeat-animation animated container-fluid" ui-view ng-cloak autoscroll="false"></div>
+
+		<!-- build:js js/vendors.min.js -->
+			<!-- bower:js -->
+			<script src="bower_components/jquery/dist/jquery.js"></script>
+			<script src="bower_components/angular/angular.js"></script>
+			<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+			<script src="bower_components/angular-animate/angular-animate.js"></script>
+			<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+			<script src="bower_components/ngDialog/js/ngDialog.js"></script>
+			<script src="bower_components/redactor/js/redactor.js"></script>
+			<script src="bower_components/angular-redactor/angular-redactor.js"></script>
+			<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- build:js js/main.min.js -->
+			<!-- begin:js -->
+<script src="js/app.js"></script>
+<script src="js/controllers/homeController.js"></script>
+<script src="js/controllers/newsController.js"></script>
+<!-- end:js -->
+		<!-- endbuild -->
+	</body>
+</html>
