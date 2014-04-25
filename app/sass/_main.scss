@@ -130,6 +130,12 @@ table {
 		border-bottom: 1px solid #ddd!important;
 	}
 
+	th, td {
+		input {
+			cursor: pointer;
+		}
+	}
+
 	tbody tr:first-child td {
 		border-top: #000;
 	}

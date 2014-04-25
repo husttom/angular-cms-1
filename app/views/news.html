@@ -10,7 +10,7 @@
 			<table class="table table-striped">
 				<thead>
 					<tr>
-						<th width="30"><input type="checkbox"></th>
+						<th width="30"><input type="checkbox" ng-model="selectedAll"></th>
 						<th width="480">Title</th>
 						<th width="75">Autor</th>
 						<th width="200">Categories</th>
@@ -20,7 +20,7 @@
 				</thead>
 				<tbody>
 					<tr ng-repeat="news in newses | filter: { title : titleFilter }  | filter: { date : dateFilter } | filter: { author : authorFilter } | filter: { categories : categorieFilter }">
-						<td><input type="checkbox"></td>
+						<td><input type="checkbox" ng-checked="selectedAll"></td>
 						<td>{{ news.title }}</td>
 						<td>{{ news.author }}</td>
 						<td>{{ news.categories }}</td>
