@@ -6,6 +6,7 @@ html, body {
 	font-family: 'Open Sans', sans-serif;
 	background: #e5e9ec;
 	overflow-x: hidden;
+	transition:all linear 0.5s;
 }
 
 ::-webkit-scrollbar {
@@ -14,10 +15,6 @@ html, body {
 
 a {
 	cursor: pointer;
-}
-
-table {
-	font-size: 13px;
 }
 
 // Login form
@@ -125,10 +122,20 @@ h3 {
 	font-size: 18px ;
 }
 
-th {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
+table {
+	font-size: 13px;
+
+	th {
+		font-weight: 600;
+		border-bottom: 1px solid #ddd!important;
+	}
+
+	tbody tr:first-child td {
+		border-top: #000;
+	}
 }
+
+
 
 // DASHBOARD
 
@@ -321,11 +328,7 @@ th {
 		padding: 0 15px;
 	}
 
-	textarea {
-		min-height: 350px;
-	}
-
-	.redactor_form-control {
+	.redactor_form-control, textarea {
 		min-height: 350px;
 		max-height: 350px;
 	}
@@ -344,15 +347,12 @@ th {
 			background-image: none;
 			border: 1px solid #ccc;
 			border-radius: 4px;
-			-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 			box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-			-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 			transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 
 			&.focused {
 				border-color: #66afe9;
 				outline: 0;
-				-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 				box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 			}
 
@@ -399,6 +399,10 @@ th {
 
 .redactor_dropdown {
 	z-index: 10000;
+	box-sizing: content-box;
+	a {
+		box-sizing: content-box;
+	}
 }
 
 // Animations

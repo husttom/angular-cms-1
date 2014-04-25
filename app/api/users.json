@@ -1,8 +1,10 @@
 [
 	{
-		"name": "Artur"
+		"name": "Artur",
+		"value" : "artur"
 	},
 	{
-		"name": "Saatur"
+		"name": "Saatur",
+		"value" : "saatur"
 	}
 ]

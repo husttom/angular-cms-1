@@ -1,15 +1,19 @@
-app.controller('NewsController', function($scope, ngDialog, TagsFactory){
+app.controller('NewsController', function($scope, ngDialog, staticDataFactory, NewsFactory){
 
-	TagsFactory.getCategories('tags').then(function(data){
+	staticDataFactory.getData('tags').then(function(data){
 		$scope.categories = data.data;
-		$scope.categories.unshift({ text: 'All categories' });
-		$scope.categorieFilter = $scope.categories[0];
+		$scope.categories.unshift({ text: 'All categories', value: '' });
+		$scope.categorieFilter = $scope.categories[0]['value'];
 	});
 
-	TagsFactory.getCategories('users').then(function(data){
+	staticDataFactory.getData('users').then(function(data){
 		$scope.users = data.data;
-		$scope.users.unshift({ name: 'All users' });
-		$scope.usersFilter = $scope.users[0];
+		$scope.users.unshift({ name: 'All users', value: '' });
+		$scope.authorFilter = $scope.users[0]['value'];
+	});
+
+	NewsFactory.getAll().then(function(data){
+		$scope.newses = data.data;
 	});
 
 	$scope.editPopup = function(id) {
