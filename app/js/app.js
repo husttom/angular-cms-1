@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ui.router', 'ngAnimate', 'ngDialog', 'angular-redactor', 'ngTagsInput']);
+var app = angular.module('app', ['ui.router', 'ngAnimate', 'ngDialog', 'angular-redactor', 'ui.select2']);
 
 app.config(function($stateProvider, $urlRouterProvider){
 

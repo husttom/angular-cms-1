@@ -11,6 +11,7 @@
     "ngDialog": "~0.1.7",
     "redactor": "https://github.com/saatur/redactor.git",
     "angular-redactor": "https://github.com/TylerGarlick/angular-redactor.git#~1.0.0",
-    "ng-tags-input": "~2.0.1"
+    "select2": "~3.4.6",
+    "angular-ui-select2": "~0.0.5"
   }
 }

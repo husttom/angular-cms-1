@@ -313,6 +313,10 @@ table {
 	color: #fff;
 }
 
+.select2-drop {
+	z-index: 10000!important;
+}
+
 
 // Popups
 .ngdialog.ngdialog-theme-default {
