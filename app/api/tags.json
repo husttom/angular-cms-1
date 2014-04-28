@@ -1,18 +1,18 @@
 [
 	{
-		"text": "Home-news",
+		"name": "Home-news",
 		"value": "Home-news"
 	},
 	{
-		"text": "Article",
+		"name": "Article",
 		"value": "Article"
 	},
 	{
-		"text": "Test-Cat",
+		"name": "Test-Cat",
 		"value": "Test-Cat"
 	},
 	{
-		"text": "Categories",
+		"name": "Categories",
 		"value": "Categories"
 	}
 ]

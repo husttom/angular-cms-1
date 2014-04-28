@@ -33,14 +33,20 @@
 	<body>
 
 		<div class="sidebar animated slideInLeft">
+			<div class="user">
+				<img src="img/avatar.jpg" height="60" width="60" alt="">
+				<div class="welcome">
+					Welcome,<br>Artur
+				</div>
+			</div>
 			<div class="nav">
 				<ul>
-					<li ui-sref-active="active"><a ui-sref="home"><span class="glyphicon glyphicon-home"></span><br>Home</a></li>
-					<li ui-sref-active="active"><a ui-sref="news"><span class="glyphicon glyphicon-align-left"></span><br>News</a></li>
-					<li ui-sref-active="active"><a ui-sref="pages"><span class="glyphicon glyphicon-file"></span><br>Pages</a></li>
-					<li ui-sref-active="active"><a ui-sref="gallery" ><span class="glyphicon glyphicon-picture"></span><br>Gallery</a></li>
-					<li ui-sref-active="active"><a ui-sref="users"><span class="glyphicon glyphicon-user"></span><br>Users</a></li>
-					<li ui-sref-active="active"><a href="login.html"><span class="glyphicon glyphicon-off"></span><br>Logout</a></li>
+					<li ui-sref-active="active" ui-sref="home"><span class="glyphicon glyphicon-home"></span> Home</li>
+					<li ui-sref-active="active" ui-sref="news"><span class="glyphicon glyphicon-align-left"></span> News</li>
+					<li ui-sref-active="active" ui-sref="pages"><span class="glyphicon glyphicon-file"></span> Pages</li>
+					<li ui-sref-active="active" ui-sref="gallery"><span class="glyphicon glyphicon-picture"></span> Gallery</li>
+					<li ui-sref-active="active" ui-sref="users"><span class="glyphicon glyphicon-user"></span> Users</li>
+					<li ui-sref-active="active" ui-sref="/login.html"><span class="glyphicon glyphicon-off"></span> Logout</li>
 				</ul>
 			</div>
 		</div>

@@ -1,0 +1,11 @@
+// Animations
+
+.repeat-animation.ng-enter {
+	-webkit-animation-name: slideInLeft;
+	animation-name: slideInLeft;
+}
+
+.repeat-animation.ng-leave {
+	-webkit-animation-name: slideOutRight;
+	animation-name: slideOutRight;
+}

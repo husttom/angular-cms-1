@@ -1,0 +1,96 @@
+.box {
+	color: $baseColorDark;
+	padding: 0 5px 10px 5px;
+
+	@media (max-width: $narrow) {
+		padding: 0 15px 10px 15px;
+	}
+
+	& .inside {
+		background: $baseColor;
+		padding: 10px;
+		box-shadow: 1px 1px 1px rgba($baseColorDarkHover, .1);
+		overflow: hidden;
+
+		&.full-size {
+			padding: 0;
+		}
+
+		&.background {
+
+		}
+
+		.header {
+			font-weight: 400;
+			font-size: 14px;
+			margin-bottom: 10px;
+
+			span {
+				font-weight: 700;
+			}
+
+			a.glyphicon {
+				font-size: 15px;
+				opacity: .8;
+			}
+		}
+
+		.copy {
+			font-size: 16px;
+		}
+
+		&.color, &.color a {
+			color: $baseColor;
+			text-decoration: none;
+
+			.dropdown-menu {
+
+				a {
+					color: $baseColorDark;
+				}
+			}
+
+		}
+
+		&.center {
+			text-align: center;
+		}
+
+		&.color-dark {
+			background: $baseColorDark;
+		}
+
+		&.color-red {
+			background: $baseColorRed;
+		}
+
+		&.color-light {
+			background: $baseColorLight;
+		}
+
+	}
+}
+
+.box-first {
+	padding-left: 15px;
+}
+
+.box-last {
+	padding-right: 16px;
+}
+
+.box-sm .inside {
+	height: 200px;
+
+	@media (max-width: $medium) {
+		height: 150px;
+	}
+}
+
+.box-md .inside{
+	height: 250px;
+}
+
+.box-xs .inside{
+	height: 120px;
+}

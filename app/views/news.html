@@ -1,63 +1,68 @@
 <div class="scroll">
 	<div class="row">
-		<div class="header">
-			<h1><span class="glyphicon glyphicon-align-left"></span> News</h1>
+		<div class="col-md-12 title">
+			<h1>News</h1>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="col-md-9 col-sm-9 left-col">
-			<table class="table table-striped">
-				<thead>
-					<tr>
-						<th width="30"><input type="checkbox" ng-model="selectedAll"></th>
-						<th width="480">Title</th>
-						<th width="75">Autor</th>
-						<th width="200">Categories</th>
-						<th width="75">Date</th>
-						<th style="min-width: 75px; max-width: 95px;width: 80px;">Actions</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr ng-repeat="news in newses | filter: { title : titleFilter }  | filter: { date : dateFilter } | filter: { author : authorFilter } | filter: { categories : categorieFilter }">
-						<td><input type="checkbox" ng-checked="selectedAll"></td>
-						<td>{{ news.title }}</td>
-						<td>{{ news.author }}</td>
-						<td>{{ news.categories }}</td>
-						<td>{{ news.date }}</td>
-						<td valign="middle">
-							<a href="#"><i class="glyphicon glyphicon-eye-open"></i></a>&nbsp;&nbsp;
-							<a ng-click="editPopup(news)" ><i class="glyphicon glyphicon-edit"></i></a>&nbsp;&nbsp;
-							<a href="#"><i class="glyphicon glyphicon-remove"></i></a>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+		<div class="col-md-9 col-sm-9 box box-first">
+			<div class="inside">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th class="col1"><input type="checkbox" ng-model="selectedAll"></th>
+							<th class="col2">Title</th>
+							<th class="col3">Autor</th>
+							<th class="col4">Categories</th>
+							<th class="col5">Date</th>
+							<th class="col6">Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="news in newses | filter: { title : titleFilter }  | filter: { date : dateFilter } | filter: { author : authorFilter } | filter: { categories : categorieFilter }">
+							<td class="col1"><input type="checkbox" ng-checked="selectedAll"></td>
+							<td class="col2">{{ news.title }}</td>
+							<td class="col3">{{ news.author }}</td>
+							<td class="col4">{{ news.categories }}</td>
+							<td class="col5">{{ news.date }}</td>
+							<td valign="middle" class="col6">
+								<a ng-click="editPopup(news)" ><i class="glyphicon glyphicon-edit"></i></a>&nbsp;&nbsp;
+								<a href="#"><i class="glyphicon glyphicon-remove"></i></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
-		<div class="col-md-3 col-sm-3 left-col">
-			<h3>Filter</h3>
-			<form role="form">
-				<div class="form-group">
-					<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Title" ng-model="titleFilter">
+		<div class="col-md-3 col-sm-3 box box-last">
+			<div class="inside">
+				<div class="header">
+					Filter <span>newses</span>
 				</div>
-				<div class="form-group">
-					<select ng-model="authorFilter" class="form-control">
-						<option ng-repeat="user in users" value="{{user.value}}">
-							{{user.name}}
-						</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<select ui-select2 multiple ng-model="number" data-placeholder="Pick a number">
-				    <option value="one">First</option>
-				    <option value="two">Second</option>
-				    <option value="three">Third</option>
-				</select>
-				</div>
-				<div class="form-group">
-					<input type="date" class="form-control" id="exampleInputEmail1" placeholder="Date" ng-model="dateFilter">
-				</div>
-			</form>
+				<form role="form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="exampleInputEmail1" placeholder="By title" ng-model="titleFilter">
+					</div>
+					<div class="form-group">
+						<select ui-select2 multiple ng-model="authorFilter" data-placeholder="By author">
+							<option ng-repeat="user in users" value="{{user.value}}">
+								{{user.name}}
+							</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<select ui-select2 multiple ng-model="categorieFilter" data-placeholder="By categorie">
+							<option ng-repeat="categorie in categories" value="{{categorie.value}}">
+								{{categorie.name}}
+							</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<input type="date" class="form-control" id="exampleInputEmail1" placeholder="Date" ng-model="dateFilter">
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 </div>

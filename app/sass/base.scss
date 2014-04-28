@@ -4,3 +4,8 @@
 $experimental-support-for-svg: true;
 
 @import "_main";
+@import "partials/_login";
+@import "partials/_navigation";
+@import "partials/_dashboard";
+@import "partials/_ngdialog";
+@import "partials/_animations";

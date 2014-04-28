@@ -2,8 +2,6 @@ app.controller('NewsController', function($scope, ngDialog, staticDataFactory, N
 
 	staticDataFactory.getData('tags').then(function(data){
 		$scope.categories = data.data;
-		$scope.categories.unshift({ text: 'All categories', value: '' });
-		$scope.categorieFilter = $scope.categories[0].value;
 	});
 
 	staticDataFactory.getData('users').then(function(data){
