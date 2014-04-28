@@ -6,24 +6,68 @@
 	</div>
 
 	<div class="row">
-		<div class="col-md-9 col-sm-9">
+		<div class="col-md-8 col-sm-6 col-lg-9 box-right-clear">
+				<div class="col-md-6 col-sm-12 col-lg-4 box box-xs">
+					<div class="inside">
+						<div class="avatar">
+							<img src="img/avatar1.jpg" height="100" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-lg-4 box box-xs">
+					<div class="inside">
+						<div class="avatar">
+							<img src="img/avatar3.jpg" height="100" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-lg-4 box box-xs">
+					<div class="inside">
+						<div class="avatar">
+							<img src="img/avatar2.jpg" height="100" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-lg-4 box box-xs">
+					<div class="inside">
+						<div class="avatar">
+							<img src="img/avatar4.jpg" height="100" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-lg-4 box box-xs">
+					<div class="inside">
+						<div class="avatar">
+							<img src="img/avatar.jpg" height="100" alt="">
+						</div>
+					</div>
+				</div>
 
 		</div>
 
-
-		<div class="col-md-3 col-sm-3 box box-last">
+		<div class="col-md-4 col-sm-6 col-lg-3 box box-last">
 			<div class="inside">
 				<div class="header">
 					Add <span>user</span>
 				</div>
 				<form role="form">
 					<div class="form-group">
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+						<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
 					</div>
 					<div class="form-group">
 						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
 					</div>
-					<button type="submit" class="btn btn-success pull-right">Submit</button>
+					<div class="form-group">
+						<select ui-select2 multiple ng-model="categorieFilter" data-placeholder="Role">
+							<option value="administrator">Administrator</option>
+							<option value="moderator">Moderator</option>
+							<option value="user">User</option>
+						</select>
+					</div>
+					<button type="submit" class="btn btn-success pull-right">Add user</button>
 				</form>
 			</div>
 		</div>

@@ -6,8 +6,6 @@ app.controller('NewsController', function($scope, ngDialog, staticDataFactory, N
 
 	staticDataFactory.getData('users').then(function(data){
 		$scope.users = data.data;
-		$scope.users.unshift({ name: 'All users', value: '' });
-		$scope.authorFilter = $scope.users[0].value;
 	});
 
 	NewsFactory.getAll().then(function(data){

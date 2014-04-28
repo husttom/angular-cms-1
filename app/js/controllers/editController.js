@@ -9,7 +9,7 @@ app.controller('EditController', function($scope, staticDataFactory){
 		return staticDataFactory.getData('tags');
 	};
 
-	$scope.list_of_string = ['tag1', 'tag2'];
+	$scope.list_of_string = ['Article'];
 	$scope.select2Options = {
 		'multiple': true,
 		'simple_tags': true,
