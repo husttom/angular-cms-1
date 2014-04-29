@@ -1,7 +1,13 @@
 <form role="form" ng-controller="EditController">
 	<div class="row">
-		<div class="col-md-8">
-			<h3>Edit news:</h3>
+		<div class="col-md-12 box">
+			<div class="header">
+				Edit <span>news</span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8 box">
 			<div class="form-group">
 				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Title" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
 			</div>
@@ -17,10 +23,9 @@
 			</div>
 		</div>
 
-		<div class="col-md-4">
-			<h3>&nbsp;</h3>
+		<div class="col-md-4 box">
 			<div class="form-group">
-				<input type="hidden" ui-select2="select2Options" ng-model="categories">
+				<input type="hidden" ui-select2="select2Options" ng-model="list_of_string">
 			</div>
 			<div class="form-group">
 				<select ng-model="userEdit" class="form-control" disabled>

@@ -3,8 +3,8 @@ module.exports = function(grunt) {
 	require('load-grunt-tasks')(grunt);
 
 	var paths = {
-		relativeDev : '',
-		relativeBuild : ''
+		relativeDev : '/admin/app',
+		relativeBuild : '/admin/app'
 	};
 
 	grunt.initConfig({

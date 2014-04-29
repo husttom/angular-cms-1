@@ -138,12 +138,12 @@ a {
 
 .select2-container-multi {
 	width: 100%;
-	min-height: 34px;
+	min-height: 33px;
 
 	.select2-choices {
 		border: 1px solid #ccc;
 		box-shadow: none!important;
-		min-height: 34px!important;
+		min-height: 33px!important;
 		background: #FFF;
 
 		.select2-search-choice {
@@ -161,12 +161,14 @@ a {
 			}
 
 			&.select2-search-choice-focus {
-				background-color: #fff;
+				background-color: #d43f3a;
 				border-color: #d43f3a;
 			}
 		}
 	}
 	.select2-input {
+		padding: 3px 5px 4px 5px!important;
+
 		&:hover, &:active, &:focus {
 			box-shadow: none;
 		}

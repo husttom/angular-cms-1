@@ -2,6 +2,10 @@
 .ngdialog.ngdialog-theme-default {
 	padding: 0;
 
+	.row {
+		margin: 0!important;
+	}
+
 	.ngdialog-overlay {
 		height: auto;
 	}
@@ -12,6 +16,18 @@
 		width: 80%;
 		min-height: 550px;
 		margin-top: 5%;
+		border-radius: 0;
+		border-top: 1px solid #fff;
+		border-left: 1px solid #fff;
+		padding: 30px;
+
+		@media (max-height: 700px) {
+			margin-top: 3%;
+		}
+
+		@media (min-height: 900px) {
+			margin-top: 8%;
+		}
 	}
 
 	.buttons {
