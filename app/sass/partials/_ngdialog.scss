@@ -2,6 +2,10 @@
 .ngdialog.ngdialog-theme-default {
 	padding: 0;
 
+	.box .header {
+		margin-bottom: 0;
+	}
+
 	.row {
 		margin: 0!important;
 	}
@@ -22,7 +26,7 @@
 		padding: 30px;
 
 		@media (max-height: 700px) {
-			margin-top: 3%;
+			margin-top: 2%;
 		}
 
 		@media (min-height: 900px) {
